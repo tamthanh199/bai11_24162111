@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+	version="3.0">
+	<persistence-unit name="de05-jpa"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>vn.hcmute.webpr330479.models.UserRole_24162111</class>
+		<class>vn.hcmute.webpr330479.models.Seller_24162111</class>
+		<class>vn.hcmute.webpr330479.models.User_24162111</class>
+		<class>vn.hcmute.webpr330479.models.Category_24162111</class>
+		<class>vn.hcmute.webpr330479.models.Product_24162111</class>
+		<class>vn.hcmute.webpr330479.models.Cart_24162111</class>
+		<class>vn.hcmute.webpr330479.models.CartItem_24162111</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:webshop;MODE=MSSQLServer;DB_CLOSE_DELAY=-1;INIT=CREATE SCHEMA IF NOT EXISTS dbo" />
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="jakarta.persistence.jdbc.user" value="sa" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+            <property name="hibernate.show_sql" value="false" />
+        </properties>
+    </persistence-unit>
+</persistence>

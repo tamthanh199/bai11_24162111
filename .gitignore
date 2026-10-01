@@ -1,0 +1,6 @@
+target/
+tests/target/
+*.log
+*.tmp
+.env
+.env.*
